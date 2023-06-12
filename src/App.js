@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import './App.css'
+import './App.scss'
+import { Header } from './components/Header/Header'
 
 const tg = window.Telegram.WebApp
 
@@ -14,6 +15,7 @@ function App() {
 
 	return (
 		<div className='App'>
+			<Header />
 			Shop
 			<button onClick={onClose}>Close</button>
 		</div>
