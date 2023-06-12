@@ -11,7 +11,7 @@ export const List = () => {
 		<div className='list'>
 			{gallery.map(item => {
 				return (
-					<div key={item.id}>
+					<div key={item.id} className='item'>
 						<p>{item.name}</p>
 						<img src={item.url} />
 					</div>
