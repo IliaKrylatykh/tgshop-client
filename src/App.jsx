@@ -16,8 +16,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Header />
-			Shop
-			<button onClick={onClose}>Close</button>
+			<List />
 		</div>
 	)
 }
