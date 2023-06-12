@@ -4,5 +4,8 @@
 
 	.item {
 		height: var(--tg-viewport-height / 3);
+		.img {
+			width: 100%;
+		}
 	}
 }

@@ -13,7 +13,8 @@ export const List = () => {
 				return (
 					<div key={item.id} className='item'>
 						<p>{item.name}</p>
-						<img src={item.url} />
+
+						<img src={item.url} className='img' />
 					</div>
 				)
 			})}
