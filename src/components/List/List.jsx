@@ -11,11 +11,11 @@ export const List = () => {
 		<div className='list'>
 			{gallery.map(item => {
 				return (
-					<div key={item.id} className='item'>
-						<p>{item.name}</p>
-
-						<img src={item.url} className='img' />
-					</div>
+					<div
+						key={item.id}
+						className='item'
+						style={{ backgroundImage: `url(${item.url})` }}
+					></div>
 				)
 			})}
 		</div>

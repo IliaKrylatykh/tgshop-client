@@ -1,7 +1,16 @@
+import { useEffect } from 'react'
 import './Header.scss'
 
 export const Header = () => {
 	const tg = window.Telegram.WebApp
+
+	useEffect(() => {
+		tg.ready()
+	}, [])
+
+	const onClose = () => {
+		tg.close()
+	}
 
 	return (
 		<nav className='header'>
@@ -19,7 +28,9 @@ export const Header = () => {
 					YouTube
 				</a>
 			</div>
-			<button className='close'>Close</button>
+			<button onClick={onClose} className='close'>
+				Close
+			</button>
 		</nav>
 	)
 }
